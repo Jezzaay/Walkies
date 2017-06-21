@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+>
+
+
+    <com.twitter.sdk.android.core.identity.TwitterLoginButton
+        android:id="@+id/twitter_login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/sendToTwitter"
+        android:layout_alignParentStart="true" />
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:id="@+id/imageView"
+        android:contentDescription="@string/image"
+        android:layout_gravity="center_horizontal" />
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_twitter_share"
+        android:id="@+id/sendToTwitter"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="42dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sendEmail"
+        android:src="@drawable/email"
+        android:layout_alignTop="@+id/sendToTwitter"
+        android:layout_alignBottom="@+id/twitter_login_button"
+        android:layout_toEndOf="@+id/twitter_login_button" />
+
+</RelativeLayout>

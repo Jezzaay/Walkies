@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/staffMember"
+        android:id="@+id/textViewSTAFF"
+        android:layout_marginTop="61dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textViewADDRESS" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextSTAFF"
+        android:layout_alignBottom="@+id/textViewSTAFF"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/address"
+        android:id="@+id/textViewADDRESS"
+        android:layout_marginTop="64dp"
+        android:layout_below="@+id/textViewSTAFF"
+        android:layout_alignStart="@+id/textViewDATE" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextADDRESS"
+        android:layout_alignBottom="@+id/textViewADDRESS"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/editTextDATE"
+        android:layout_marginTop="48dp"
+        android:layout_below="@+id/editTextADDRESS"
+        android:layout_alignStart="@+id/editTextADDRESS" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/date"
+        android:id="@+id/textViewDATE"
+        android:layout_below="@+id/editTextDATE"
+        android:layout_alignStart="@+id/textViewStartTime" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/startTime"
+        android:id="@+id/textViewStartTime"
+        android:layout_marginStart="70dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/type"
+        android:id="@+id/textView"
+        android:layout_alignTop="@+id/radioGroup"
+        android:layout_alignStart="@+id/textViewDATE" />
+
+    <Button
+        style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/confirm"
+        android:id="@+id/confirmButton"
+        android:layout_alignTop="@+id/cancelButton"
+        android:layout_alignStart="@+id/editTextDATE" />
+
+    <Button
+        style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel"
+        android:id="@+id/cancelButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textView" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioGroup"
+        android:layout_above="@+id/confirmButton"
+        android:layout_alignStart="@+id/confirmButton">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dogSit"
+            android:id="@+id/radioButtonDogSit" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dogWalk"
+            android:id="@+id/radioButtonDogWalk"
+            android:checked="true" />
+    </RadioGroup>
+
+    <TimePicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/timePicker2"
+        android:timePickerMode="spinner"
+        android:layout_centerVertical="true"
+        android:layout_alignEnd="@+id/editTextDATE" />
+
+</RelativeLayout>

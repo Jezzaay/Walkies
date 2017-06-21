@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Walkies</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="booking">Booking</string>
+    <string name="home">Home</string>
+    <string name="username">User_Name</string>
+    <string name="hello_world">Hello World</string>
+    <string name="welcome"> Welcome  </string>
+    <string name="confirm">confirm</string>
+    <string name="whatName">What is your name?</string>
+    <string name="cancel">Cancel</string>
+    <string name="newBooking">New Booking</string>
+    <string name="takesPhoto">Takes Photo</string>
+
+    <string name="image">Image</string>
+    <string name="staffMember">Staff Member</string>
+    <string name="address">Address</string>
+    <string name="date">Date</string>
+    <string name="startTime">Start Hour:</string>
+    <string name="dogWalk">Dog Walk</string>
+    <string name="type">Type:</string>
+    <string name="dogSit">Dog Sit</string>
+    <string name="To"> to </string>
+    <string name="search">Search</string>
+    <string name="search_label">Customers</string>
+    <string name="search_hint">Search Customers</string>
+    <string name="dogSitAlreadyDay">Dog Sit on this day</string>
+    <string name="workerSetAtThisTime">Staff is busy.</string>
+    <string name="fillTextFields">Fill in the text fields</string>
+    <string name="noNameEntered">No name entered</string>
+    <string name="notification">Notification</string>
+</resources>

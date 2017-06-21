@@ -1,0 +1,43 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity"
+    >
+
+
+
+    <item android:id="@id/search_bar"
+        android:title="@string/search"
+        android:icon="@drawable/abc_ic_search_api_mtrl_alpha"
+
+        android:showAsAction="always"
+        />
+
+
+    <item android:id="@+id/action_booking"
+        android:title="@string/booking"
+        android:icon="@drawable/booking"
+
+        android:showAsAction="always" />
+
+
+    <item android:id="@+id/action_home"
+        android:title="@string/home"
+        android:icon="@drawable/home"
+        android:showAsAction="always" />
+
+
+    <item android:id="@+id/action_camera"
+        android:icon="@mipmap/ic_camera"
+        android:showAsAction="always" />
+
+
+
+
+    <item
+        android:id="@+id/action_settings"
+        android:title="@string/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+
+
+
+</menu>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.jeremy.walkies" >
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera"  android:required="true" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme." >
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"/>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".UserSettingsActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".MainActivity"
+            />
+        <activity
+            android:name=".CameraActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".ShareActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".CameraActivity" />
+        <activity
+            android:name=".DatabaseEntryActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".SearchActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"/>
+
+        </intent-filter>
+
+           </activity>
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="f5552a057268c5041e86b4dff7a18ef488fc5fb6" />
+        <!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+             App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+
+    </application>
+
+</manifest>
